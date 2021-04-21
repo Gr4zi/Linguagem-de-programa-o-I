@@ -1,0 +1,32 @@
+/*
+ * IFSP - Campus Cubatao - ADS371
+ * Linguagem de Programacao LP1I3 - Prof Tuler
+ * Trabalho Pratico 01
+ * Alunos: Grazielle da Silva Ribeiro CB3007316 e Josuel Joao dos Santos CB3005542
+ */
+package tp01;
+
+import java.util.Scanner;
+
+/**
+ *Exercicio12: Calcular e exibir o volume de um cone a partir dos valores da altura e do raio da base que serão digitados. 
+ */
+public class TP01Ex12 {
+    public static void main(String[] args){
+        Scanner ler = new Scanner(System.in);
+        
+        int alt;
+        System.out.printf("Informe o valor da altura do cone:\n");
+        alt=ler.nextInt();
+        System.out.printf("\n");
+        
+        int raio;
+        System.out.printf("Informe o valor do raio da base:\n");
+        raio=ler.nextInt();
+        System.out.printf("\n");
+        
+        double vcone=(Math.PI*Math.pow(raio,2)*alt)/3;
+        System.out.printf("O volume do cone é de:"+vcone+".");
+          
+    }
+}
