@@ -1,0 +1,26 @@
+/*
+ * IFSP - Campus Cubatao - ADS371
+ * Linguagem de Programacao LP1I3 - Prof Tuler
+ * Trabalho Pratico 01
+ * Alunos: Grazielle da Silva Ribeiro CB3007316 e Josuel Joao dos Santos CB3005542
+ */
+package tp01;
+import java.util.Scanner;
+
+/**
+ *Exercicio 02: Calcular e exibir a área de um quadrado, a partir do valor de sua aresta que será digitado. 
+ */
+public class TP01Ex02 {
+    public static void main(String[] args){
+        Scanner ler=new Scanner(System.in);
+        
+        int aresta;
+        System.out.printf("Informe o valor da aresta do quadrado:\n");
+        aresta=ler.nextInt();
+        System.out.printf("\n");
+        
+        int area=aresta*aresta;
+        System.out.printf("O valor da área do quadrado de aresta "+aresta+" é de "+area+".");
+        
+    }
+}
