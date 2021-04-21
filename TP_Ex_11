@@ -1,0 +1,30 @@
+/*
+ * IFSP - Campus Cubatao - ADS371
+ * Linguagem de Programacao LP1I3 - Prof Tuler
+ * Trabalho Pratico 01
+ * Alunos: Grazielle da Silva Ribeiro CB3007316 e Josuel Joao dos Santos CB3005542
+ */
+package tp01;
+
+import java.util.Scanner;
+
+/**
+ *Exercicio 11: A partir do diâmetro de um círculo que será digitado, calcular e exibir sua área. 
+ */
+public class TP01Ex11 {
+    public static void main(String[] args){
+        Scanner ler = new Scanner(System.in);
+        
+        int diametro;        
+        System.out.printf("Informe o valor do diametro do circulo:\n");
+        diametro=ler.nextInt();
+        System.out.printf("\n");
+        
+        int raio=diametro/2;
+        
+        double area=Math.PI*Math.pow(raio,2);
+        
+        System.out.printf("A área do círculo de diâmtro "+diametro+" é "+area+".");
+        
+    }
+}
