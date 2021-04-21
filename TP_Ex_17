@@ -1,0 +1,33 @@
+/*
+ * IFSP - Campus Cubatao - ADS371
+ * Linguagem de Programacao LP1I3 - Prof Tuler
+ * Trabalho Pratico 01
+ * Alunos: Grazielle da Silva Ribeiro CB3007316 e Josuel Joao dos Santos CB3005542
+ */
+package tp01;
+
+import java.util.Scanner;
+
+/**
+ *Exercicio 17: Entrar via teclado com dois valores quaisquer “X” e “Y”. Calcular e exibir o cálculo XY (“X” elevado a “Y”). Pesquisar as funções Exp e Ln. 
+ */
+public class TP01Ex17 {
+    public static void main(String[] args){
+        Scanner ler = new Scanner(System.in);
+        
+        int x;        
+        System.out.printf("Informe o valor da base:\n");
+        x=ler.nextInt();
+        System.out.printf("\n");
+               
+        int y;        
+        System.out.printf("Informe o valor do expoente:\n");
+        y=ler.nextInt();
+        System.out.printf("\n");
+        
+        double potencia=Math.pow(x,y);
+        
+        System.out.printf(x+" elevado a "+y+" é igual a "+potencia+".");
+        
+    }
+}
