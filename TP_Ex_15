@@ -1,0 +1,33 @@
+/*
+ * IFSP - Campus Cubatao - ADS371
+ * Linguagem de Programacao LP1I3 - Prof Tuler
+ * Trabalho Pratico 01
+ * Alunos: Grazielle da Silva Ribeiro CB3007316 e Josuel Joao dos Santos CB3005542
+ */
+package tp01;
+
+import java.util.Scanner;
+
+/**
+ *Exercicio 15: Entrar via teclado com o valor da cotação do dólar e uma certa quantidade de dólares. Calcular e exibir o valor correspondente em Reais (R$).
+ */
+public class TP01Ex15 {
+    public static void main(String[] args){
+        Scanner ler = new Scanner(System.in);
+        
+        double cotacao;        
+        System.out.printf("Informe o valor da cotação do dólar atualmente (1 dólar vale quantos reais?):\n");
+        cotacao=ler.nextInt();
+        System.out.printf("\n");
+               
+        double dolar;        
+        System.out.printf("informe a quantidade de dólares que deseja converter:\n");
+        dolar=ler.nextInt();
+        System.out.printf("\n");
+        
+        double real=dolar*cotacao;
+        
+        System.out.printf(dolar+"US$ equivale a "+real+"R$.");
+        
+    }
+}
