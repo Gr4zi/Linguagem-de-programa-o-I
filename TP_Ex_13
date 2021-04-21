@@ -1,0 +1,38 @@
+/*
+ * IFSP - Campus Cubatao - ADS371
+ * Linguagem de Programacao LP1I3 - Prof Tuler
+ * Trabalho Pratico 01
+ * Alunos: Grazielle da Silva Ribeiro CB3007316 e Josuel Joao dos Santos CB3005542
+ */
+package tp01;
+
+import java.util.Scanner;
+
+/**
+ *Exercicio 13: Calcular e exibir a velocidade final (em km/h) de um automóvel, a partir dos valores da velocidade inicial (em m/s), da aceleração (m/s²) e do tempo de percurso(em s) que serão digitados. 
+ */
+public class TP01Ex13 {
+    public static void main(String[] args){
+        Scanner ler = new Scanner(System.in);
+        
+        double vi;        
+        System.out.printf("Informe o valor da velocidade inicial (m/s):\n");
+        vi=ler.nextInt();
+        System.out.printf("\n");
+        
+        double acel;        
+        System.out.printf("Informe o valor da aceleração(m/s²):\n");
+        acel=ler.nextInt();
+        System.out.printf("\n");
+        
+        double tempo;        
+        System.out.printf("Informe o valor do tempo gasto (s):\n");
+        tempo=ler.nextInt();
+        System.out.printf("\n");
+        
+        double vf=(vi+(acel*tempo))*3.6;
+        
+        System.out.printf("A velocidade final é de "+vf+"Km/h.");
+        
+    }
+}
