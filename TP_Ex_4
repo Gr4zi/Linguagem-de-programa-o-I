@@ -1,0 +1,31 @@
+/*
+ * IFSP - Campus Cubatao - ADS371
+ * Linguagem de Programacao LP1I3 - Prof Tuler
+ * Trabalho Pratico 01
+ * Alunos: Grazielle da Silva Ribeiro CB3007316 e Josuel Joao dos Santos CB3005542
+ */
+package tp01;
+import java.util.Scanner;
+
+/**
+ *Exercicio 04: A partir dos valores da base e altura de um triângulo, calcular e exibir sua área.
+ */
+public class TP01Ex04 {
+    public static void main(String[] args){
+        Scanner ler= new Scanner(System.in);
+        
+        int base;
+        System.out.printf("Informe o valor da base do triangulo:\n");
+        base=ler.nextInt();
+        System.out.printf("\n");
+        
+        int altura;
+        System.out.printf("Informe o valor da altura do triangulo:\n");
+        altura=ler.nextInt();
+        System.out.printf("\n");
+        
+        int area=(base*altura)/2;
+        System.out.printf("A area de um triangulo de base "+base+" e altura "+altura+" é de "+area+".");
+        
+    }
+}
