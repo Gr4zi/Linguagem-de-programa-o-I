@@ -1,0 +1,38 @@
+/*
+ * IFSP - Campus Cubatao - ADS371
+ * Linguagem de Programacao LP1I3 - Prof Tuler
+ * Trabalho Pratico 01
+ * Alunos: Grazielle da Silva Ribeiro CB3007316 e Josuel Joao dos Santos CB3005542
+ */
+package tp01;
+
+import java.util.Scanner;
+
+/**
+ *Exercicio16: Entrar via teclado com o valor de um ângulo em graus, calcular e exibir as seguintes funções trigonométricas: seno, cosseno, tangente e secante deste ângulo. Lembre-se que uma função trigonométrica trabalha em radianos. 
+ */
+public class TP01Ex16 {
+    public static void main(String[] args){
+    Scanner ler = new Scanner(System.in);
+    
+    int ang;
+        System.out.printf("Informe o valor do angulo(º):\n");
+        ang=ler.nextInt();
+        System.out.printf("\n");
+        
+        double rad=Math.toRadians(ang); 
+        
+        double seno=Math.sin(rad);
+        System.out.printf("O seno de "+ang+" graus é: "+seno+".\n");
+        
+        double cosseno=Math.cos(rad);
+        System.out.printf("O cosseno de "+ang+" graus é: "+cosseno+".\n");
+        
+        double tangente=Math.tan(rad);
+        System.out.printf("O tangente de "+ang+" graus é: "+tangente+".\n");
+        
+        double secante=1/cosseno;
+        System.out.printf("O secante de "+ang+" graus é: "+secante+".\n");
+        
+    }
+}
