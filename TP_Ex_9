@@ -1,0 +1,33 @@
+/*
+ * IFSP - Campus Cubatao - ADS371
+ * Linguagem de Programacao LP1I3 - Prof Tuler
+ * Trabalho Pratico 01
+ * Alunos: Grazielle da Silva Ribeiro CB3007316 e Josuel Joao dos Santos CB3005542
+ */
+package tp01;
+
+import java.util.Scanner;
+
+/**
+ *Exercicio 09:  Calcular e exibir a tensão de um determinado circuito eletrônico a partir dos valores da resistência e corrente elétrica que serão digitados. Utilize a lei de Ohm. 
+ */
+public class TP01Ex09 {
+    public static void main(String[] args){
+        Scanner ler = new Scanner(System.in);
+        
+        int resistencia;        
+        System.out.printf("Informe o valor da resistência (Ohm):\n");
+        resistencia=ler.nextInt();
+        System.out.printf("\n");
+        
+        int corrente;        
+        System.out.printf("Informe o valor da corrente (A):\n");
+        corrente=ler.nextInt();
+        System.out.printf("\n");
+        
+        int tensao=corrente*resistencia;
+        
+        System.out.printf("A tensão (V) do circuito de resistência "+resistencia+" (Ohm) e corrente "+corrente+" (A) é "+tensao+".");
+        
+    }
+}
