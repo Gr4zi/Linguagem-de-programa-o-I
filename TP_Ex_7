@@ -1,0 +1,33 @@
+/*
+ * IFSP - Campus Cubatao - ADS371
+ * Linguagem de Programacao LP1I3 - Prof Tuler
+ * Trabalho Pratico 01
+ * Alunos: Grazielle da Silva Ribeiro CB3007316 e Josuel Joao dos Santos CB3005542
+ */
+package tp01;
+
+import java.util.Scanner;
+
+/**
+ *Exericio 07: Calcular e exibir a média geométrica de dois valores quaisquer que serão digitados.
+ */
+public class TP01Ex07 {
+    public static void main(String[] args){
+        Scanner ler = new Scanner(System.in);
+        
+        int valor1;        
+        System.out.printf("Informe o primeiro valor:\n");
+        valor1=ler.nextInt();
+        System.out.printf("\n");
+        
+        int valor2;        
+        System.out.printf("Informe o segundo valor:\n");
+        valor2=ler.nextInt();
+        System.out.printf("\n");
+        
+        double mediag=Math.sqrt((valor1*valor2));
+        
+        System.out.printf("A média geométrica dos valores "+valor1+" e "+valor2+" é "+mediag+".");
+        
+    }
+}
